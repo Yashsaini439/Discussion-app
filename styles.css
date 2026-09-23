@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f4f6f8;
+}
+
+header {
+  background: #007bb5;
+  color: white;
+  padding: 15px 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Left Pane Styles */
+.left-pane {
+  width: 35%;
+  border-right: 1px solid #ccc;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.left-controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background: #007bb5;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #005f8c;
+}
+
+.search-box {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.question-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.question-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  cursor: pointer;
+  background: #fafafa;
+  position: relative;
+}
+
+.question-card:hover {
+  background: #f0f4f8;
+}
+
+.question-card h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.question-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #555;
+}
+
+.vote-btns, .fav-btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.star {
+  font-size: 18px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star.starred {
+  color: #f39c12;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: bold;
+}
+
+/* Right Pane Styles */
+.right-pane {
+  width: 65%;
+  padding: 25px;
+  overflow-y: auto;
+  background: #fff;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.response-list {
+  margin-top: 20px;
+}
+
+.response-card {
+  background: #f9f9f9;
+  border-left: 4px solid #007bb5;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}
+
+.resolve-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.resolve-btn:hover {
+  background: #c9302c;
+}
